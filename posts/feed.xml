@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Alex White's Website</title>
+  <link>https://thatalexguy.dev</link>
+  <description>Cycling, fatherhood and handcrafted writing.</description>
+
+   <item>
+	<title>Back to Static HTML</title>
+	<link>https://thatalexguy.dev/posts/2026/november/back-to-static-html.html</link>
+	<description>I've taken this website back to the basics (again).</description>
+  </item>
+
+</channel>
+</rss>
