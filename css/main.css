@@ -83,6 +83,21 @@ main {
 		border-radius: 5px;
 	}
 	
+	aside {
+		display: block;
+		margin: 1rem 0;
+		width: 100%;
+		padding: 0.5rem 0.5rem 0.5rem 1rem;
+		border-left: 4px solid black;
+		font-size: 0.85rem;
+		line-height: 1.5rem;
+		
+		&.info {
+			border-left-color: rgb(104, 171, 255);
+			background-color: rgb(229, 238, 249);;
+		}
+	}
+	
 	.emphasize {
 		display: inline-block;
 		padding: 0 0.25rem;

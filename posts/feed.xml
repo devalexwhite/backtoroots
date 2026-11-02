@@ -6,11 +6,18 @@
   <link>https://thatalexguy.dev</link>
   <description>Cycling, fatherhood and handcrafted writing.</description>
 
-   <item>
+  <item>
 	<title>Back to Static HTML</title>
 	<link>https://thatalexguy.dev/posts/2026/november/back-to-static-html.html</link>
 	<description>I've taken this website back to the basics (again).</description>
 	<pubDate>Mon, 2 Nov 2026 12:00:00 EST</pubDate>
+  </item>
+  
+  <item>
+    <title>Book Review - Ascension</title>
+    <link>https://thatalexguy.dev/posts/2026/october/ascension-book-review.html</link>
+    <description>Review of the book "Ascension" by Nicholas Binge.</description>
+    <pubDate>Wed, 28 Oct 2026 12:00:00 EST</pubDate>
   </item>
 
 </channel>
