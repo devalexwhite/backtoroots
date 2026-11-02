@@ -7,13 +7,14 @@ body {
 	font-variation-settings:
 	"wdth" 100;
 	color: rgb(34, 13, 74);
+	padding: 0 1rem;
 }
 
 header, main, footer {
 	width: 100%;
 	max-width: 600px;
 	margin: 1rem auto;
-	padding: 0 2rem;
+	
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
 }
 
 header {
-	border-bottom: 2px solid rgb(104, 171, 255);
+	border-bottom: 5px solid rgb(104, 171, 255);
 	padding: 1.5rem 0;
 	margin-bottom: 2rem;
 	
