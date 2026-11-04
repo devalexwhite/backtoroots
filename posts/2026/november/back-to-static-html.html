@@ -1,58 +1,106 @@
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/main.css">
-	<title>Alex White | Back to Static HTML</title>
-</head>
-<body>
-	<header>
-	<h1>Back to Static HTML</h1>
-	<div class="posted">Posted 11/2/26</div>
-	<nav>
-		<a href="/posts/index.html">Back</a>
-	</nav>
-</header>
-	<main>
-		<article>
-			<p>
-				It's that time of day again where I rebuild this site! But hold on, there's a few reasons this time, not <span class="emphasize">just</span> me having fun!
-			</p>
-			
-			<h3>The Age of Exploits</h3>
-			<p>
-				It's no secret that running a website has become a bit dangerous lately. For example, the <a target="_blank" href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4630238/nsa-advisory-critical-patches-recommended-for-php-vulnerabilities/">critical PHP exploits</a> that recently led to public warnings from the NSA, FBI and even <a target="_blank" href="https://thedefiant.io/news/security/japan-s-prime-minister-urges-php-patching-suggests-temporary-site-shutdowns">Japanese Prime Minister</a>. This specific incident impacted my old website, as it ran on PHP hosted by a VPS (virtual private server). I had to login to my server, upgrade PHP and reboot. Not a big deal, but I honest forgot to do it.
-			</p>
-			<p>
-				With the expectation that <a href="https://www.chainguard.dev/unchained/the-ai-exploit-gap-how-ai-is-changing-security" target="_blank">AI will further increase the rate at which exploits are found</a>, I decided to move my site to static hosting. This vastly reduces that possibility of it being exploited, while also reducing the need for me to pay for and maintain a server. 
-			</p>
-			
-			<h3>Being Lazy</h3>
-			<p>
-				My first step towards migrating this site was...not good. In an interest of not investing too much time, I prompted Codex to build and migrate my site as a Hugo statically built website. It created a theme, migrated my articles and deployed to Vercel. I wasn't proud of it, in fact I felt completely disconnected from it. It wasn't mine and it had no personality, despite the articles being 100% my own words. In my mind, a personal website is the artistic canvas that presents your writing, and I had automated that away.
-			</p>
-			<p>
-				This morning I ran across <a href="https://www.youtube.com/watch?v=fG7mM6Yymaw" target="_blank">this video</a>. <a href="https://hayyoth.org" target="_blank">Hayyoth</a> demonstrated the difference between AI generated websites and those crafted with a purpose, a soul. He explained the importance of <span class="emphasize">handcrafting your site</span>. 
-			</p>
-			<p>
-				So here we are!
-			</p>
-			
-			<h3>The Great Rebuild</h3>
-			<p>
-				Static, raw HTML handwritten in the Nova text editor, hosted on Cloudflare. That's the present and future of this site. I want this site to be a journal. Not only in the sense of the writing it holds, but also in the evolution of it's sitemap, CSS and content. Something in 5 years I can flip through the pages of it's history to see the evolution of both the site and myself.
-			</p>
-			<img src="/img/backtoroots-nova-editor.jpeg" alt="Screenshot of the Nova code editor showing the HTML of this article.">
-			<p>
-				All that to say, I'm starting at page 1. It's mostly blank, but I'll continue filling it out as I go. I've named this project "Back to Roots", the goal being the rediscovery of why I got into coding and writing. To that end, it goes without saying, but all content, code and images posted on this site will be made with LLM assistance. This is a playground for myself, and only myself.
-			</p>
-		</article>
-	</main>
-	<footer>
-		<p>
-			Hand coded by Alex White in Ohio.
-		</p>
-	</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Alex White | Back to Static HTML</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Back to Static HTML</h1>
+        <div class="posted">Posted 11/2/26</div>
+      </div>
+      <nav>
+        <a href="/posts/index.html">Back</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <p>
+          It's that time of day again where I rebuild this site! But hold on,
+          there's a few reasons this time, not
+          <span class="emphasize">just</span> me having fun!
+        </p>
+
+        <h3>The Age of Exploits</h3>
+        <p>
+          It's no secret that running a website has become a bit dangerous
+          lately. For example, the
+          <a
+            target="_blank"
+            href="https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/4630238/nsa-advisory-critical-patches-recommended-for-php-vulnerabilities/"
+            >critical PHP exploits</a
+          >
+          that recently led to public warnings from the NSA, FBI and even
+          <a
+            target="_blank"
+            href="https://thedefiant.io/news/security/japan-s-prime-minister-urges-php-patching-suggests-temporary-site-shutdowns"
+            >Japanese Prime Minister</a
+          >. This specific incident impacted my old website, as it ran on PHP
+          hosted by a VPS (virtual private server). I had to login to my server,
+          upgrade PHP and reboot. Not a big deal, but I honest forgot to do it.
+        </p>
+        <p>
+          With the expectation that
+          <a
+            href="https://www.chainguard.dev/unchained/the-ai-exploit-gap-how-ai-is-changing-security"
+            target="_blank"
+            >AI will further increase the rate at which exploits are found</a
+          >, I decided to move my site to static hosting. This vastly reduces
+          that possibility of it being exploited, while also reducing the need
+          for me to pay for and maintain a server.
+        </p>
+
+        <h3>Being Lazy</h3>
+        <p>
+          My first step towards migrating this site was...not good. In an
+          interest of not investing too much time, I prompted Codex to build and
+          migrate my site as a Hugo statically built website. It created a
+          theme, migrated my articles and deployed to Vercel. I wasn't proud of
+          it, in fact I felt completely disconnected from it. It wasn't mine and
+          it had no personality, despite the articles being 100% my own words.
+          In my mind, a personal website is the artistic canvas that presents
+          your writing, and I had automated that away.
+        </p>
+        <p>
+          This morning I ran across
+          <a href="https://www.youtube.com/watch?v=fG7mM6Yymaw" target="_blank"
+            >this video</a
+          >.
+          <a href="https://hayyoth.org" target="_blank">Hayyoth</a> demonstrated
+          the difference between AI generated websites and those crafted with a
+          purpose, a soul. He explained the importance of
+          <span class="emphasize">handcrafting your site</span>.
+        </p>
+        <p>So here we are!</p>
+
+        <h3>The Great Rebuild</h3>
+        <p>
+          Static, raw HTML handwritten in the Nova text editor, hosted on
+          Cloudflare. That's the present and future of this site. I want this
+          site to be a journal. Not only in the sense of the writing it holds,
+          but also in the evolution of it's sitemap, CSS and content. Something
+          in 5 years I can flip through the pages of it's history to see the
+          evolution of both the site and myself.
+        </p>
+        <img
+          src="/img/backtoroots-nova-editor.jpeg"
+          alt="Screenshot of the Nova code editor showing the HTML of this article."
+        />
+        <p>
+          All that to say, I'm starting at page 1. It's mostly blank, but I'll
+          continue filling it out as I go. I've named this project "Back to
+          Roots", the goal being the rediscovery of why I got into coding and
+          writing. To that end, it goes without saying, but all content, code
+          and images posted on this site will be made with LLM assistance. This
+          is a playground for myself, and only myself.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Hand coded by Alex White in Ohio.</p>
+    </footer>
+  </body>
 </html>
