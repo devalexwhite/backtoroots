@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Alex White | Voting and Cycling</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.1.2/gpx.min.js"
+      defer
+    ></script>
+    <style>
+      #map {
+        height: 500px;
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Voting and Cycling</h1>
+      <div class="posted">Posted 11/4/26</div>
+      <nav>
+        <a href="/posts/index.html">Back</a>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <img
+          src="/img/voting-ride/me.jpeg"
+          alt="Holding my voting sticker wearing a USA cycling jersey"
+        />
+        <p>
+          Yesterday was election day in the USA, so what better way to go vote
+          then throwing on my USA jersey (I got it at a bike swap meet) and ride
+          over to my polling location. I was in and out in 15 minutes, then
+          celebrated with a 27 mile ride in the absolutely gorgeous weather.
+        </p>
+        <div id="map"></div>
+        <img
+          src="/img/voting-ride/fields.jpeg"
+          alt="A road surrounded by fields"
+        />
+        <img src="/img/voting-ride/bike.jpeg" alt="My bike" />
+      </article>
+    </main>
+    <footer>
+      <p>Hand coded by Alex White in Ohio.</p>
+    </footer>
+    <script type="module">
+      const map = L.map("map");
+      L.tileLayer(
+        "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {},
+      ).addTo(map);
+
+      // URL to your GPX file or the GPX itself as a XML string.
+      const url = "/gpx/Go_vote_.gpx";
+      const options = {
+        async: true,
+        polyline_options: { color: "red" },
+      };
+
+      const gpx = new L.GPX(url, options)
+        .on("loaded", (e) => {
+          map.fitBounds(e.target.getBounds());
+        })
+        .addTo(map);
+    </script>
+  </body>
+</html>

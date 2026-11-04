@@ -1,7 +1,7 @@
 {
   "clips" : [
     {
-      "content" : "<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<link rel=\"stylesheet\" href=\"\/css\/main.css\">\n\t<title>Alex White | ${:Title}<\/title>\n<\/head>\n<body>\n\t<header>\n\t<h1>${:Title}<\/h1>\n\t<div class=\"posted\">Posted $DATE<\/div>\n\t<nav>\n\t\t<a href=\"\/\">Back Home<\/a>\n\t<\/nav>\n<\/header>\n\t<main>\n\t\t<article>\n\t\t\t<p>\n\t\t\t\t${:Contents}\n\t\t\t<\/p>\n\t\t<\/article>\n\t<\/main>\n\t<footer>\n\t\t<p>\n\t\t\tHand coded by Alex White in Ohio.\n\t\t<\/p>\n\t<\/footer>\n<\/body>\n<\/html>",
+      "content" : "<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t<link rel=\"stylesheet\" href=\"\/css\/main.css\">\n\t<title>Alex White | ${:Title}<\/title>\n<\/head>\n<body>\n\t<header>\n\t<h1>${:Title}<\/h1>\n\t<div class=\"posted\">Posted $DATE<\/div>\n\t<nav>\n\t\t<a href=\"\/posts\/index.html\">Back<\/a>\n\t<\/nav>\n<\/header>\n\t<main>\n\t\t<article>\n\t\t\t<p>\n\t\t\t\t${:Contents}\n\t\t\t<\/p>\n\t\t<\/article>\n\t<\/main>\n\t<footer>\n\t\t<p>\n\t\t\tHand coded by Alex White in Ohio.\n\t\t<\/p>\n\t<\/footer>\n<\/body>\n<\/html>",
       "name" : "Article",
       "scope" : "editor",
       "syntax" : "html"
